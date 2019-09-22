@@ -30,10 +30,6 @@ if __name__ == '__main__':
 
         if not os.path.isfile(csvfilename):
 
-            with open(csvfilename, 'w', newline='') as csvfile:
-                writer = csv.writer(csvfile)
-                writer.writerow(['Link Produs', 'Pret (lei)'])
-
             for page_number in range(1, num_of_pages+1):
                 contents = requests.get(link_former(link, page_number)).content
                 soup = BeautifulSoup(contents, 'html.parser')
