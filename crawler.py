@@ -15,16 +15,14 @@ def link_former(link, page_number=1):
     return link[:-2] + '/p' + str(page_number) + link[-2:]
 
 
-if __name__=='__main__':
+if __name__ == '__main__':
     links = ['https://www.emag.ro/televizoare/c',
              'https://www.emag.ro/scaune-gaming/c',
              'https://www.emag.ro/laptopuri/c',
              'https://www.emag.ro/telefoane-mobile/c',
              'https://www.emag.ro/monitoare-lcd-led/c'
              ]
-
     date = datetime.now().strftime('%Y-%m-%d')
-
 
     for link in links:
         num_of_pages = get_total_pages_number(link_former(link))
@@ -54,11 +52,3 @@ if __name__=='__main__':
         else:
             print('CSV file already created')
         print(f'Done! {csvfilename}')
-
-
-
-
-
-
-
-
