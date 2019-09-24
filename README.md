@@ -14,7 +14,7 @@ Online Retail store website crawler for price monitoring
  __Heads up!__ This project is taylored to work with emag.ro site. All the links and the data mining procedure are specific for that site. If you want to use this for another site you will need to change the code accordingly.
  
  If you want to monitor the prices on emag.ro you will have to do the following:
- - Hardcode the links of the product cathegory you want to monitor in the *links* variable from *crawler.py* (ex. 'https://www.emag.ro/*product type*/c' )
+ - Hardcode the links of the product cathegory you want to monitor in the *links* variable from *crawler.py* (ex. 'https://www.emag.ro/product_type/c' )
  - Then you will need to automate the *crawler.py* script to gather data periodically
  - Finally you can use the tools inside *data_visualisation.py* to visualise your gathered data
  
